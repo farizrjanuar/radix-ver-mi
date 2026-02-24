@@ -36,13 +36,10 @@ export default function Navbar() {
           <Image
             src="/images/logo-radix-full.png"
             alt="Radix Consulting"
-            width={44}
-            height={44}
+            width={160}
+            height={48}
             className="transition-transform duration-300 group-hover:scale-105"
           />
-          <span className="font-serif text-xl font-semibold text-dark tracking-tight">
-            Radix Consulting
-          </span>
         </Link>
 
         {/* Desktop Nav */}
