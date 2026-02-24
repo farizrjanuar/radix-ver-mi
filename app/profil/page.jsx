@@ -49,7 +49,7 @@ export default function ProfilPage() {
         </div>
       </section>
 
-         {/* Tim Profesional */}
+      {/* Tim Profesional */}
       <section className="py-16 px-6 bg-secondary/20">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-12">
@@ -72,7 +72,7 @@ export default function ProfilPage() {
           </div>
         </div>
       </section>
-      
+
       {/* Visi & Misi */}
       <section className="py-16 px-6 bg-secondary/20">
         <div className="max-w-6xl mx-auto">
