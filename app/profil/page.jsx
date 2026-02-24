@@ -50,7 +50,7 @@ export default function ProfilPage() {
       </section>
 
       {/* Tim Profesional */}
-      <section className="py-16 px-6">
+      <section className="py-16 px-6 bg-secondary/20">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-12">
             <span className="text-sm font-semibold text-accent uppercase tracking-wider">
@@ -74,11 +74,20 @@ export default function ProfilPage() {
       </section>
 
       {/* Visi & Misi */}
-      <section className="py-16 px-6 bg-secondary/20">
+      <section className="py-16 px-6">
         <div className="max-w-6xl mx-auto">
+          <div className="text-center mb-12">
+            <span className="text-sm font-semibold text-accent uppercase tracking-wider">
+              Visi & Misi
+            </span>
+            <h2 className="font-serif text-3xl md:text-4xl font-bold text-dark mt-3">
+              Arah dan Tujuan Kami
+            </h2>
+          </div>
+
           <div className="grid md:grid-cols-2 gap-12">
             {/* Visi */}
-            <div className="bg-primary/80 rounded-3xl p-10">
+            <div className="bg-secondary/30 rounded-3xl p-10">
               <div className="w-14 h-14 rounded-2xl bg-accent/20 flex items-center justify-center mb-6">
                 <svg
                   width="28"
@@ -107,7 +116,7 @@ export default function ProfilPage() {
             </div>
 
             {/* Misi */}
-            <div className="bg-primary/80 rounded-3xl p-10">
+            <div className="bg-secondary/30 rounded-3xl p-10">
               <div className="w-14 h-14 rounded-2xl bg-accent/20 flex items-center justify-center mb-6">
                 <svg
                   width="28"
@@ -186,7 +195,7 @@ export default function ProfilPage() {
               ].map((item, idx) => (
                 <div
                   key={idx}
-                  className="bg-primary/80 rounded-3xl p-8 text-center hover-lift cursor-default"
+                  className="bg-secondary/30 rounded-3xl p-8 text-center hover-lift cursor-default"
                 >
                   <span className="text-4xl mb-4 block" role="img" aria-hidden="true">
                     {item.icon}

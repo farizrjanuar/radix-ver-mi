@@ -65,6 +65,29 @@ export default function Navbar() {
               Konsultasi
             </Link>
           </li>
+          <li className="ml-2">
+            <a
+              href="https://maps.app.goo.gl/3iTiHYB7dGcD1V8h9"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="w-10 h-10 rounded-2xl flex items-center justify-center text-dark/70 transition-all duration-300 hover:bg-secondary/60 hover:text-accent"
+              aria-label="Lokasi kami di Google Maps"
+            >
+              <svg
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                strokeWidth="2.5"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+              >
+                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" />
+                <circle cx="12" cy="10" r="3" />
+              </svg>
+            </a>
+          </li>
         </ul>
 
         {/* Mobile Toggle */}
@@ -126,6 +149,30 @@ export default function Navbar() {
               >
                 Konsultasi
               </Link>
+            </li>
+            <li>
+              <a
+                href="https://maps.app.goo.gl/3iTiHYB7dGcD1V8h9"
+                target="_blank"
+                rel="noopener noreferrer"
+                onClick={() => setIsOpen(false)}
+                className="flex items-center gap-3 px-4 py-3 rounded-2xl text-dark/80 font-medium transition-all duration-300 hover:bg-secondary/60 hover:text-dark"
+              >
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  strokeWidth="2.5"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                >
+                  <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" />
+                  <circle cx="12" cy="10" r="3" />
+                </svg>
+                Lokasi Kami
+              </a>
             </li>
           </ul>
         </div>
