@@ -1,32 +1,33 @@
 "use client";
 
+import Image from "next/image";
 import Link from "next/link";
 import { useEffect, useRef } from "react";
 
 const coreValues = [
   {
-    icon: "🌿",
-    title: "Ketenangan",
-    description:
-      "Kami menciptakan ruang aman dan damai bagi setiap individu untuk mengeksplorasi diri tanpa penghakiman.",
-  },
-  {
     icon: "💛",
-    title: "Empati",
+    title: "Empati dan Kepedulian",
     description:
-      "Setiap sesi dibangun atas dasar empati mendalam, mendengarkan dengan sepenuh hati dan memahami perspektif Anda.",
+      "Kami mendengarkan dengan sepenuh hati dan memahami setiap klien tanpa penghakiman.",
   },
   {
-    icon: "🔬",
-    title: "Berbasis Bukti",
+    icon: "⚖️",
+    title: "Profesionalisme dan Etika",
     description:
-      "Pendekatan kami didasarkan pada riset ilmiah terkini dan praktik psikologi berbasis bukti yang teruji.",
+      "Kami menjunjung tinggi standar profesi dan kode etik psikologi dalam setiap layanan.",
+  },
+  {
+    icon: "🌱",
+    title: "Pendekatan Berbasis Akar Permasalahan",
+    description:
+      "Kami percaya bahwa solusi yang berkelanjutan dimulai dari pemahaman mendalam terhadap akar masalah.",
   },
   {
     icon: "🤝",
-    title: "Kolaboratif",
+    title: "Kolaborasi dan Keberlanjutan",
     description:
-      "Proses penyembuhan adalah perjalanan bersama. Kami bekerja sama dengan Anda menuju tujuan yang Anda tetapkan.",
+      "Kami membangun hubungan kolaboratif dengan klien dan mitra untuk hasil jangka panjang yang bermakna.",
   },
 ];
 
@@ -126,28 +127,16 @@ export default function HomePage() {
       <section className="py-24 px-6">
         <div className="max-w-6xl mx-auto fade-section">
           <div className="grid md:grid-cols-2 gap-16 items-center">
-            {/* Decorative visual */}
+            {/* Logo visual */}
             <div className="relative">
-              <div className="aspect-square rounded-3xl bg-secondary/50 flex items-center justify-center overflow-hidden">
-                <div className="relative w-full h-full p-12 flex items-center justify-center">
-                  <div className="w-48 h-48 rounded-full bg-accent/20 absolute" />
-                  <div className="w-32 h-32 rounded-full bg-accent/30 absolute" />
-                  <div className="w-20 h-20 rounded-full bg-accent/50 absolute flex items-center justify-center">
-                    <svg
-                      width="32"
-                      height="32"
-                      viewBox="0 0 24 24"
-                      fill="none"
-                      stroke="white"
-                      strokeWidth="2"
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      aria-hidden="true"
-                    >
-                      <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z" />
-                    </svg>
-                  </div>
-                </div>
+              <div className="aspect-square rounded-3xl bg-secondary/50 flex items-center justify-center overflow-hidden p-12">
+                <Image
+                  src="/images/logo-radix-full.png"
+                  alt="Radix Consulting"
+                  width={400}
+                  height={400}
+                  className="object-contain"
+                />
               </div>
             </div>
 
@@ -157,18 +146,19 @@ export default function HomePage() {
                 Tentang Kami
               </span>
               <h2 className="font-serif text-3xl md:text-4xl font-bold text-dark leading-tight">
-                Ruang Aman untuk Setiap Perjalanan Mental Anda
+                Memahami Akar Permasalahan, Membangun Solusi Berkelanjutan
               </h2>
               <p className="text-dark/70 leading-relaxed">
-                Radix Consulting adalah pusat layanan psikologi yang
-                didirikan dengan keyakinan bahwa setiap individu berhak
-                mendapatkan dukungan profesional untuk kesehatan mental mereka.
+                Radix Consulting adalah penyedia layanan psikologi yang
+                membantu individu dan masyarakat memahami akar permasalahan
+                psikologis secara mendalam, sebagai dasar untuk meningkatkan
+                kesejahteraan dan kualitas hidup.
               </p>
               <p className="text-dark/70 leading-relaxed">
-                Dengan tim psikolog berpengalaman dan pendekatan yang
-                holistik, kami membantu Anda mengatasi tantangan emosional,
-                mengembangkan ketahanan mental, dan menemukan keseimbangan
-                dalam hidup sehari-hari.
+                Dengan tim psikolog profesional dan berpengalaman, kami
+                mengintegrasikan pendekatan berbasis bukti ilmiah dengan
+                kepekaan terhadap konteks budaya dan kebutuhan unik setiap
+                klien.
               </p>
               <Link
                 href="/profil"
