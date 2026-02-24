@@ -9,10 +9,11 @@ export const metadata = {
 const teamMembers = [
   {
     name: "Jasmine Mustika Zahraa, M.Psi., Psikolog",
-    role: "Psikolog Klinis",
+    role: "Psikolog",
     bio: "Berpengalaman menangani kasus kecemasan, depresi, gangguan perilaku, tumbuh kembang dan emosi anak/remaja, serta pendampingan korban kekerasan seksual. Juga berpengalaman dalam konseling pranikah dan pasangan dengan pendekatan terapi kognitif perilaku yang humanis.",
     initial: "JZ",
     photo: "/images/jasmine.jpg",
+    photoPosition: "center 20%",
   },
   {
     name: "Hening Mahardika, M.Psi., Psikolog",
@@ -40,7 +41,7 @@ export default function ProfilPage() {
             Tentang Kami
           </span>
           <h1 className="font-serif text-4xl md:text-5xl font-bold text-dark mt-3 mb-6">
-            Profil Perusahaan
+            Profil Klinik
           </h1>
           <p className="text-lg text-dark/70 max-w-2xl mx-auto leading-relaxed">
             Mengenal lebih dekat siapa kami, apa yang kami yakini, dan bagaimana

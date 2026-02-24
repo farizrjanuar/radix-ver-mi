@@ -1,6 +1,6 @@
 import Image from "next/image";
 
-export default function TeamCard({ name, role, bio, initial, photo }) {
+export default function TeamCard({ name, role, bio, initial, photo, photoPosition }) {
   return (
     <article className="group bg-secondary/40 rounded-3xl p-8 text-center hover-lift cursor-default">
       {/* Avatar */}
@@ -11,7 +11,8 @@ export default function TeamCard({ name, role, bio, initial, photo }) {
             alt={name}
             width={112}
             height={112}
-            className="w-full h-full object-cover object-top"
+            className="w-full h-full object-cover"
+            style={{ objectPosition: photoPosition || "center top" }}
           />
         ) : (
           <div className="w-full h-full bg-accent/20 flex items-center justify-center">
