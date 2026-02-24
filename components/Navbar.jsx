@@ -34,14 +34,14 @@ export default function Navbar() {
         {/* Logo */}
         <Link href="/" className="flex items-center gap-3 group">
           <Image
-            src="/images/logo-radix.png"
+            src="/images/logo-radix-full.png"
             alt="Radix Consulting"
-            width={40}
-            height={40}
+            width={44}
+            height={44}
             className="transition-transform duration-300 group-hover:scale-105"
           />
           <span className="font-serif text-xl font-semibold text-dark tracking-tight">
-            Radix
+            Radix Consulting
           </span>
         </Link>
 
