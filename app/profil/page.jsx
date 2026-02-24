@@ -13,7 +13,7 @@ const teamMembers = [
     bio: "Berpengalaman menangani kasus kecemasan, depresi, gangguan perilaku, tumbuh kembang dan emosi anak/remaja, serta pendampingan korban kekerasan seksual. Juga berpengalaman dalam konseling pranikah dan pasangan dengan pendekatan terapi kognitif perilaku yang humanis.",
     initial: "JZ",
     photo: "/images/jasmine.jpg",
-    photoPosition: "center 20%",
+    photoPosition: "center 10%",
   },
   {
     name: "Hening Mahardika, M.Psi., Psikolog",
