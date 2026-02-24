@@ -49,6 +49,30 @@ export default function ProfilPage() {
         </div>
       </section>
 
+         {/* Tim Profesional */}
+      <section className="py-16 px-6 bg-secondary/20">
+        <div className="max-w-6xl mx-auto">
+          <div className="text-center mb-12">
+            <span className="text-sm font-semibold text-accent uppercase tracking-wider">
+              Tim Kami
+            </span>
+            <h2 className="font-serif text-3xl md:text-4xl font-bold text-dark mt-3">
+              Profesional yang Berdedikasi
+            </h2>
+            <p className="text-dark/70 mt-4 max-w-2xl mx-auto">
+              Tim kami terdiri dari psikolog berlisensi dan profesional
+              berpengalaman yang berkomitmen untuk kesejahteraan Anda.
+            </p>
+          </div>
+
+          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+            {teamMembers.map((member, idx) => (
+              <TeamCard key={idx} {...member} />
+            ))}
+          </div>
+        </div>
+      </section>
+      
       {/* Visi & Misi */}
       <section className="py-16 px-6 bg-secondary/20">
         <div className="max-w-6xl mx-auto">
@@ -239,30 +263,6 @@ export default function ProfilPage() {
                   {item.desc}
                 </p>
               </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Tim Profesional */}
-      <section className="py-16 px-6 bg-secondary/20">
-        <div className="max-w-6xl mx-auto">
-          <div className="text-center mb-12">
-            <span className="text-sm font-semibold text-accent uppercase tracking-wider">
-              Tim Kami
-            </span>
-            <h2 className="font-serif text-3xl md:text-4xl font-bold text-dark mt-3">
-              Profesional yang Berdedikasi
-            </h2>
-            <p className="text-dark/70 mt-4 max-w-2xl mx-auto">
-              Tim kami terdiri dari psikolog berlisensi dan profesional
-              berpengalaman yang berkomitmen untuk kesejahteraan Anda.
-            </p>
-          </div>
-
-          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
-            {teamMembers.map((member, idx) => (
-              <TeamCard key={idx} {...member} />
             ))}
           </div>
         </div>
