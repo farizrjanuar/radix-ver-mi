@@ -18,16 +18,16 @@ const services = [
       { label: "Online", value: "Rp150.000" },
       { label: "Offline", value: "Rp225.000" },
     ],
-  },
-  {
-    icon: "📦",
-    title: "Paket 3 Sesi Konseling Individual",
-    description:
-      "Paket hemat 3 sesi konseling individual dewasa untuk proses pendampingan yang lebih berkelanjutan dan terstruktur.",
-    duration: "± 60 menit per sesi",
-    prices: [
-      { label: "Online", value: "Rp425.000" },
-      { label: "Offline", value: "Rp650.000" },
+    packages: [
+      {
+        icon: "📦",
+        title: "Paket 3 Sesi (Hemat)",
+        note: "Untuk pendampingan yang lebih berkelanjutan dan terstruktur.",
+        prices: [
+          { label: "Online", value: "Rp425.000" },
+          { label: "Offline", value: "Rp650.000" },
+        ],
+      },
     ],
   },
   {
@@ -65,7 +65,8 @@ const services = [
   },
   {
     icon: "📊",
-    title: "Tes Potensi Diri (16+)",
+    title: "Tes Potensi Diri",
+    ageBadge: "Usia 16+",
     description:
       "Asesmen psikologis komprehensif untuk mengenali potensi, minat, bakat, dan kepribadian Anda guna mendukung pengembangan diri dan pengambilan keputusan karier.",
     duration: "± 90 menit",
@@ -77,6 +78,7 @@ const services = [
   {
     icon: "🎒",
     title: "Tes Kesiapan Sekolah Dasar",
+    ageBadge: "Usia 5–7",
     description:
       "Evaluasi kesiapan anak untuk memasuki jenjang sekolah dasar meliputi aspek kognitif, sosial-emosional, dan kemandirian.",
     duration: "± 90 menit",
@@ -86,7 +88,8 @@ const services = [
   },
   {
     icon: "🧒",
-    title: "Tes Potensi Kecerdasan (3+)",
+    title: "Tes Potensi Kecerdasan",
+    ageBadge: "Usia 3+",
     description:
       "Asesmen potensi kecerdasan anak usia 3 tahun ke atas untuk memahami kemampuan kognitif dan mendukung stimulasi perkembangan yang optimal.",
     duration: "± 60 menit",
