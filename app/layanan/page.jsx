@@ -101,6 +101,7 @@ const services = [
   {
     icon: "🌱",
     title: "Skrining Tumbuh Kembang Anak",
+    ageBadge: "Usia 0–12",
     description:
       "Pemeriksaan dan evaluasi perkembangan anak untuk mendeteksi dini potensi keterlambatan dan memberikan rekomendasi intervensi yang sesuai.",
     duration: "± 60 menit",
