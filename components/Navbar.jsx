@@ -64,7 +64,7 @@ export default function Navbar() {
           </li>
           <li className="ml-2">
             <a
-              href="https://maps.app.goo.gl/3iTiHYB7dGcD1V8h9"
+              href="https://maps.app.goo.gl/qc3bAgQTaP4UK3p57"
               target="_blank"
               rel="noopener noreferrer"
               className="w-10 h-10 rounded-2xl flex items-center justify-center text-dark/70 transition-all duration-300 hover:bg-secondary/60 hover:text-accent"
@@ -149,7 +149,7 @@ export default function Navbar() {
             </li>
             <li>
               <a
-                href="https://maps.app.goo.gl/3iTiHYB7dGcD1V8h9"
+                href="https://maps.app.goo.gl/qc3bAgQTaP4UK3p57"
                 target="_blank"
                 rel="noopener noreferrer"
                 onClick={() => setIsOpen(false)}
