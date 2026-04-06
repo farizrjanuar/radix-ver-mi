@@ -12,25 +12,36 @@ const teamMembers = [
     role: "Psikolog",
     bio: "Berpengalaman menangani kasus kecemasan, depresi, gangguan perilaku, tumbuh kembang dan emosi anak/remaja, serta pendampingan korban kekerasan seksual. Juga berpengalaman dalam konseling pranikah dan pasangan dengan pendekatan terapi kognitif perilaku yang humanis.",
     initial: "JZ",
-    photo: "/images/jasmine.jpg",
+    photo: "/images/foto-jasmine.png",
   },
   {
     name: "Hening Mahardika, M.Psi., Psikolog",
     role: "Psikolog",
     bio: "Berpengalaman menangani berbagai kasus termasuk depresi, kecemasan, stres, quarter life crisis, serta masalah relasi seperti hubungan anak dan orang tua, hubungan romantis, dan pertemanan. Menggunakan pendekatan humanistik, psikoanalisis, dan kognitif perilaku.",
     initial: "HM",
-    photo: "/images/hening.png",
+    photo: "/images/hening-new.png",
   },
   {
     name: "Anis Irmala Sandy, M.Psi., Psikolog",
     role: "Psikolog",
     bio: "Berpengalaman menangani permasalahan sosial emosi remaja dan dewasa, pengembangan diri, konseling pra-nikah, tumbuh kembang anak dan pola asuh. Aktif dalam kegiatan edukasi komunitas di bidang kesehatan mental dengan minat keahlian pendekatan humanistik, journaling dan writing expression.",
     initial: "AS",
-    photo: "/images/anis.png",
+    photo: "/images/anis-new.png",
+  },
+  {
+    name: "Adlina Windya M., M. Psi., Psikolog",
+    role: "Psikolog",
+    bio: "Berpengalaman menangani depresi, kecemasan, relasi interpersonal, dan prokrastinasi. Adlina juga mendampingi pengembangan regulasi emosi, isu perkembangan anak, serta tantangan psikologis terkait penyakit kronis dengan pendekatan hangat dan terstruktur.",
+    initial: "AD",
+    photo: "/images/adlina.jpg",
   },
 ];
 
 export default function ProfilPage() {
+  const locationLink = "https://maps.app.goo.gl/qc3bAgQTaP4UK3p57";
+  const mapEmbedUrl =
+    "https://www.google.com/maps?q=Radix%20Consulting%20Boyolali&output=embed";
+
   return (
     <div className="pt-24">
       {/* Header */}
@@ -65,7 +76,7 @@ export default function ProfilPage() {
             </p>
           </div>
 
-          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div className="grid md:grid-cols-2 gap-6">
             {teamMembers.map((member, idx) => (
               <TeamCard key={idx} {...member} />
             ))}
@@ -273,6 +284,54 @@ export default function ProfilPage() {
                 </p>
               </div>
             ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Lokasi Kami */}
+      <section className="py-16 px-6 bg-secondary/20">
+        <div className="max-w-6xl mx-auto">
+          <div className="text-center mb-10">
+            <span className="text-sm font-semibold text-accent uppercase tracking-wider">
+              Lokasi
+            </span>
+            <h2 className="font-serif text-3xl md:text-4xl font-bold text-dark mt-3">
+              Kunjungi Klinik Kami
+            </h2>
+          </div>
+
+          <div className="bg-white rounded-3xl p-4 md:p-6 shadow-sm">
+            <div className="rounded-2xl overflow-hidden border border-dark/10">
+              <iframe
+                title="Lokasi Radix Consulting"
+                src={mapEmbedUrl}
+                width="100%"
+                height="420"
+                style={{ border: 0 }}
+                loading="lazy"
+                referrerPolicy="no-referrer-when-downgrade"
+                allowFullScreen
+              />
+            </div>
+
+            <div className="mt-6 grid sm:grid-cols-2 gap-6">
+              <div>
+                <h3 className="font-serif text-xl font-semibold text-dark mb-2">Radix Consulting</h3>
+                <p className="text-dark/70 leading-relaxed">
+                  Boyolali, Jawa Tengah, Indonesia
+                </p>
+              </div>
+              <div className="sm:text-right">
+                <a
+                  href={locationLink}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center justify-center px-5 py-3 rounded-2xl bg-accent text-white font-medium hover:bg-dark transition-colors duration-300"
+                >
+                  Buka di Google Maps
+                </a>
+              </div>
+            </div>
           </div>
         </div>
       </section>
